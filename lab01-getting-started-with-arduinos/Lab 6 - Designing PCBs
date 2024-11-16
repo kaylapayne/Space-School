@@ -1,0 +1,21 @@
+Steps to use KiCAD
+
+Application Installation
+- Install KiCAD
+- Install Adoptium Java (if you want auto-routing)
+- Select menu item "Tools|Plugin and Content Manager" and install the FreeRouting plugin
+
+Component Setup:
+- Download and unzip level shifter component file in your documents folder
+- Open KiCAD
+- Create schematic
+- Use Symbol Library Manager to add level shifter symbol file in your documents file
+- After placing level shifter on schematic, right-click on it and "Edit Main Fields" to assign footprint (select unzipped folder using the FootPrint Library Manager)
+
+Design:
+- Complete remainder of schematic
+- For each component on schematic, you may need to right click on it and select "Attributes|Include on Board"
+- Select the "Tools" menu and select "Update PCB from schematic..."
+- in the PCB editor layout your footprints as you would like them
+- create a cutlines outline for your PCB
+- use FreeRouting plugin to layout your connections
